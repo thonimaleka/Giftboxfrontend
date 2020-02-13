@@ -1,0 +1,12 @@
+.smaller {
+    width: 80%;
+  }
+  .well img{
+    display: inline-block;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+      }
