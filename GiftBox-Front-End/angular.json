@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "GiftBox-Front-End": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "GiftBox-Front-End"
+    }
+  },
+  "defaultProject": "GiftBox-Front-End",
+  "cli": {
+    "analytics": "222f872e-74e0-4bc6-b4c7-bb3b4a14cdb7"
+  }
 }
