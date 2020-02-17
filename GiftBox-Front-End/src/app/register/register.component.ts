@@ -10,7 +10,7 @@ import { SevirceService } from '../sevirce.service';
 export class RegisterComponent implements OnInit {
 
   @Input() registerData = {
-    id:" ", username:" ", email:" ", contact: " ", password:" "
+    id:" ", username:" ", email:" ", contact: " ", password:" ", confirm:" "
   }
 
   constructor(private _SevirceService: SevirceService,
@@ -45,6 +45,7 @@ export class RegisterComponent implements OnInit {
         console.log(this.registerData.email);
         console.log(this.registerData.contact);
         console.log(this.registerData.password);
+        console.log(this.registerData.confirm);
   }
 
 }
