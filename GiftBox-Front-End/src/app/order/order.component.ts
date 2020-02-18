@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { SevirceService } from './../sevirce.service';
+import { ActivatedRoute, Router } from '@angular/router';
+
 
 
 
@@ -14,7 +16,9 @@ export class OrderComponent implements OnInit {
     fullName: " ", email: " ",phoneNo:" ", address: " ", city: " ", province: " ", code: " "
   } 
 
-  constructor( private _SevirceService: SevirceService) { }
+  constructor( private _SevirceService: SevirceService,
+               private _activatedRouter:ActivatedRoute,
+               private _router:Router ) { }
 
   orders: any =[];
 

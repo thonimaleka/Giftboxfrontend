@@ -8,7 +8,10 @@ import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { ForgotComponent } from './forgot/forgot.component';
+import { OTPComponent } from './otp/otp.component';
+
+
 
 
 @NgModule({
@@ -18,7 +21,9 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
     NavbarComponent,
     LoginComponent,
     RegisterComponent,
-    ForgotPasswordComponent,
+    ForgotComponent,
+    OTPComponent,
+   
    
   ],
   imports: [

@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+
+
 
 @Injectable({
   providedIn: 'root'
@@ -12,6 +14,9 @@ export class SevirceService {
   orders_url = 'http://168.172.187.142:5000/allOrders';
 
   register_url = 'http://168.172.189.22:1000/register';
+
+ 
+  
 
   public getOrders()
   {
@@ -28,5 +33,8 @@ export class SevirceService {
   {
     return this.http.post<any>(this.register_url, register, {});
   } 
+
+
+  
 
 }

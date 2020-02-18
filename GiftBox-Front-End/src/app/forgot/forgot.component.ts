@@ -2,18 +2,19 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-forgot',
+  templateUrl: './forgot.component.html',
+  styleUrls: ['./forgot.component.css']
 })
-export class LoginComponent implements OnInit {
+export class ForgotComponent implements OnInit {
 
   constructor(private _activatedRouter:ActivatedRoute,
               private _router:Router ) { }
 
-              loginClick(){
-                this._router.navigate(['/order'])
-              }
+  submitEmailClick():void{
+    this._router.navigate(['/otp']);
+
+ }
 
   ngOnInit(): void {
   }

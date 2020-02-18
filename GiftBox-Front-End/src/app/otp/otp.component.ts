@@ -2,18 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-otp',
+  templateUrl: './otp.component.html',
+  styleUrls: ['./otp.component.css']
 })
-export class LoginComponent implements OnInit {
+export class OTPComponent implements OnInit {
 
   constructor(private _activatedRouter:ActivatedRoute,
               private _router:Router ) { }
-
-              loginClick(){
-                this._router.navigate(['/order'])
-              }
 
   ngOnInit(): void {
   }
