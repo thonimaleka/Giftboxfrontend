@@ -8,15 +8,19 @@ import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { LandingComponent } from './landing/landing.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    OrderComponent,
+    OrderComponent,LandingComponent,
     NavbarComponent,
     LoginComponent,
     RegisterComponent,
+    
+    WishlistComponent,
    
   ],
   imports: [
