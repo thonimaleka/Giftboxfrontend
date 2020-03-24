@@ -1,22 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-//import { LandingComponent } from '../landing/landing.component';
 
-import { NavbarComponent } from './navbar.component';
+import { AddtocartComponent } from './addtocart.component';
 
-
-describe('NavbarComponent', () => {
-  let component: NavbarComponent;
-  let fixture: ComponentFixture<NavbarComponent>;
+describe('AddtocartComponent', () => {
+  let component: AddtocartComponent;
+  let fixture: ComponentFixture<AddtocartComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NavbarComponent ]
+      declarations: [ AddtocartComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NavbarComponent);
+    fixture = TestBed.createComponent(AddtocartComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

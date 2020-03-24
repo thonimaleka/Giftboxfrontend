@@ -11,7 +11,7 @@ import { SevirceService } from './../sevirce.service';
 export class OrderComponent implements OnInit {
 
   @Input() orderData = {
-    fullName: " ", email: " ",phoneNo:" ", address: " ", city: " ", province: " ", code: " "
+    full_name: " ", email: " ",phone:" ", address: " ", city: " ", province: " ", code: " "
   } 
 
   constructor( private _SevirceService: SevirceService) { }
@@ -36,9 +36,9 @@ export class OrderComponent implements OnInit {
     this._SevirceService.addOrder(this.orderData).subscribe(
     data =>
       console.log(data));
-      console.log(this.orderData.fullName);
+      console.log(this.orderData.full_name);
       console.log(this.orderData.email);
-      console.log(this.orderData.phoneNo);
+      console.log(this.orderData.phone);
       console.log(this.orderData.address);
       console.log(this.orderData.city);
       console.log(this.orderData.province);
